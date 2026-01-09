@@ -807,6 +807,10 @@ typedef SWIFT_ENUM(NSInteger, ADXiluSplashAdStyle, open) {
   ADXiluSplashAdStyleImmersive = 2,
 };
 
+@interface BeiZiSplash (SWIFT_EXTENSION(ADXiluSDK))
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
+@end
+
 @interface GDTSplashAd (SWIFT_EXTENSION(ADXiluSDK))
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end

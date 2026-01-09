@@ -22845,6 +22845,307 @@
           },
           {
             "kind": "Function",
+            "name": "beiZi_splashBottomView",
+            "printedName": "beiZi_splashBottomView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ADXiluSDK@objc(cs)ADXiluSplashAd(im)BeiZi_splashBottomView",
+            "mangledName": "$s9ADXiluSDK0A8SplashAdC22beiZi_splashBottomViewSo6UIViewCyF",
+            "moduleName": "ADXiluSDK",
+            "objc_name": "BeiZi_splashBottomView",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "beiZi_splashDidClick",
+            "printedName": "beiZi_splashDidClick(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BeiZiSplash",
+                "printedName": "BeiZiSDK.BeiZiSplash",
+                "usr": "c:objc(cs)BeiZiSplash"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ADXiluSDK@objc(cs)ADXiluSplashAd(im)BeiZi_splashDidClick:",
+            "mangledName": "$s9ADXiluSDK0A8SplashAdC20beiZi_splashDidClickyySo03BeifC0CF",
+            "moduleName": "ADXiluSDK",
+            "objc_name": "BeiZi_splashDidClick:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "beiZi_splashAdLifeTime",
+            "printedName": "beiZi_splashAdLifeTime(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ADXiluSDK@objc(cs)ADXiluSplashAd(im)BeiZi_splashAdLifeTime:",
+            "mangledName": "$s9ADXiluSDK0A8SplashAdC012beiZi_splashD8LifeTimeyys5Int32VF",
+            "moduleName": "ADXiluSDK",
+            "objc_name": "BeiZi_splashAdLifeTime:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "beiZi_splashDidLoadSuccess",
+            "printedName": "beiZi_splashDidLoadSuccess(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BeiZiSplash",
+                "printedName": "BeiZiSDK.BeiZiSplash",
+                "usr": "c:objc(cs)BeiZiSplash"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ADXiluSDK@objc(cs)ADXiluSplashAd(im)BeiZi_splashDidLoadSuccess:",
+            "mangledName": "$s9ADXiluSDK0A8SplashAdC26beiZi_splashDidLoadSuccessyySo03BeifC0CF",
+            "moduleName": "ADXiluSDK",
+            "objc_name": "BeiZi_splashDidLoadSuccess:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "beiZi_splashDidPresentScreen",
+            "printedName": "beiZi_splashDidPresentScreen(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BeiZiSplash",
+                "printedName": "BeiZiSDK.BeiZiSplash",
+                "usr": "c:objc(cs)BeiZiSplash"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ADXiluSDK@objc(cs)ADXiluSplashAd(im)BeiZi_splashDidPresentScreen:",
+            "mangledName": "$s9ADXiluSDK0A8SplashAdC28beiZi_splashDidPresentScreenyySo03BeifC0CF",
+            "moduleName": "ADXiluSDK",
+            "objc_name": "BeiZi_splashDidPresentScreen:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "beiZi_splashDidDismissScreen",
+            "printedName": "beiZi_splashDidDismissScreen(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BeiZiSplash",
+                "printedName": "BeiZiSDK.BeiZiSplash",
+                "usr": "c:objc(cs)BeiZiSplash"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ADXiluSDK@objc(cs)ADXiluSplashAd(im)BeiZi_splashDidDismissScreen:",
+            "mangledName": "$s9ADXiluSDK0A8SplashAdC28beiZi_splashDidDismissScreenyySo03BeifC0CF",
+            "moduleName": "ADXiluSDK",
+            "objc_name": "BeiZi_splashDidDismissScreen:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "beiZi_splashWillDismissScreen",
+            "printedName": "beiZi_splashWillDismissScreen(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BeiZiSplash",
+                "printedName": "BeiZiSDK.BeiZiSplash",
+                "usr": "c:objc(cs)BeiZiSplash"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ADXiluSDK@objc(cs)ADXiluSplashAd(im)BeiZi_splashWillDismissScreen:",
+            "mangledName": "$s9ADXiluSDK0A8SplashAdC29beiZi_splashWillDismissScreenyySo03BeifC0CF",
+            "moduleName": "ADXiluSDK",
+            "objc_name": "BeiZi_splashWillDismissScreen:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "beiZi_splashZoomOutDidClick",
+            "printedName": "beiZi_splashZoomOutDidClick(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BeiZiSplash",
+                "printedName": "BeiZiSDK.BeiZiSplash",
+                "usr": "c:objc(cs)BeiZiSplash"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ADXiluSDK@objc(cs)ADXiluSplashAd(im)BeiZi_splashZoomOutDidClick:",
+            "mangledName": "$s9ADXiluSDK0A8SplashAdC27beiZi_splashZoomOutDidClickyySo03BeifC0CF",
+            "moduleName": "ADXiluSDK",
+            "objc_name": "BeiZi_splashZoomOutDidClick:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "beiZi_splashZoomOutDidClose",
+            "printedName": "beiZi_splashZoomOutDidClose(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BeiZiSplash",
+                "printedName": "BeiZiSDK.BeiZiSplash",
+                "usr": "c:objc(cs)BeiZiSplash"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ADXiluSDK@objc(cs)ADXiluSplashAd(im)BeiZi_splashZoomOutDidClose:",
+            "mangledName": "$s9ADXiluSDK0A8SplashAdC27beiZi_splashZoomOutDidCloseyySo03BeifC0CF",
+            "moduleName": "ADXiluSDK",
+            "objc_name": "BeiZi_splashZoomOutDidClose:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "beiZi_splash",
+            "printedName": "beiZi_splash(_:didFailToLoadAdWithError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BeiZiSplash",
+                "printedName": "BeiZiSDK.BeiZiSplash",
+                "usr": "c:objc(cs)BeiZiSplash"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BeiZiRequestError",
+                "printedName": "BeiZiSDK.BeiZiRequestError",
+                "usr": "c:objc(cs)BeiZiRequestError"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ADXiluSDK@objc(cs)ADXiluSplashAd(im)BeiZi_splash:didFailToLoadAdWithError:",
+            "mangledName": "$s9ADXiluSDK0A8SplashAdC12beiZi_splash_013didFailToLoadD9WithErrorySo03BeifC0C_So0nf7RequestM0CtF",
+            "moduleName": "ADXiluSDK",
+            "objc_name": "BeiZi_splash:didFailToLoadAdWithError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "msSplashAdFail",
             "printedName": "msSplashAdFail(_:extInfo:error:)",
             "children": [
@@ -23485,307 +23786,6 @@
             "mangledName": "$s9ADXiluSDK0A8SplashAdC02msC13LoadedSuccessyySo08MSSplashD0CSgF",
             "moduleName": "ADXiluSDK",
             "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "beiZi_splashBottomView",
-            "printedName": "beiZi_splashBottomView()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIView",
-                "printedName": "UIKit.UIView",
-                "usr": "c:objc(cs)UIView"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@ADXiluSDK@objc(cs)ADXiluSplashAd(im)BeiZi_splashBottomView",
-            "mangledName": "$s9ADXiluSDK0A8SplashAdC22beiZi_splashBottomViewSo6UIViewCyF",
-            "moduleName": "ADXiluSDK",
-            "objc_name": "BeiZi_splashBottomView",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "beiZi_splashDidClick",
-            "printedName": "beiZi_splashDidClick(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "BeiZiSplash",
-                "printedName": "BeiZiSDK.BeiZiSplash",
-                "usr": "c:objc(cs)BeiZiSplash"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@ADXiluSDK@objc(cs)ADXiluSplashAd(im)BeiZi_splashDidClick:",
-            "mangledName": "$s9ADXiluSDK0A8SplashAdC20beiZi_splashDidClickyySo03BeifC0CF",
-            "moduleName": "ADXiluSDK",
-            "objc_name": "BeiZi_splashDidClick:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "beiZi_splashAdLifeTime",
-            "printedName": "beiZi_splashAdLifeTime(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int32",
-                "printedName": "Swift.Int32",
-                "usr": "s:s5Int32V"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@ADXiluSDK@objc(cs)ADXiluSplashAd(im)BeiZi_splashAdLifeTime:",
-            "mangledName": "$s9ADXiluSDK0A8SplashAdC012beiZi_splashD8LifeTimeyys5Int32VF",
-            "moduleName": "ADXiluSDK",
-            "objc_name": "BeiZi_splashAdLifeTime:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "beiZi_splashDidLoadSuccess",
-            "printedName": "beiZi_splashDidLoadSuccess(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "BeiZiSplash",
-                "printedName": "BeiZiSDK.BeiZiSplash",
-                "usr": "c:objc(cs)BeiZiSplash"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@ADXiluSDK@objc(cs)ADXiluSplashAd(im)BeiZi_splashDidLoadSuccess:",
-            "mangledName": "$s9ADXiluSDK0A8SplashAdC26beiZi_splashDidLoadSuccessyySo03BeifC0CF",
-            "moduleName": "ADXiluSDK",
-            "objc_name": "BeiZi_splashDidLoadSuccess:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "beiZi_splashDidPresentScreen",
-            "printedName": "beiZi_splashDidPresentScreen(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "BeiZiSplash",
-                "printedName": "BeiZiSDK.BeiZiSplash",
-                "usr": "c:objc(cs)BeiZiSplash"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@ADXiluSDK@objc(cs)ADXiluSplashAd(im)BeiZi_splashDidPresentScreen:",
-            "mangledName": "$s9ADXiluSDK0A8SplashAdC28beiZi_splashDidPresentScreenyySo03BeifC0CF",
-            "moduleName": "ADXiluSDK",
-            "objc_name": "BeiZi_splashDidPresentScreen:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "beiZi_splashDidDismissScreen",
-            "printedName": "beiZi_splashDidDismissScreen(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "BeiZiSplash",
-                "printedName": "BeiZiSDK.BeiZiSplash",
-                "usr": "c:objc(cs)BeiZiSplash"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@ADXiluSDK@objc(cs)ADXiluSplashAd(im)BeiZi_splashDidDismissScreen:",
-            "mangledName": "$s9ADXiluSDK0A8SplashAdC28beiZi_splashDidDismissScreenyySo03BeifC0CF",
-            "moduleName": "ADXiluSDK",
-            "objc_name": "BeiZi_splashDidDismissScreen:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "beiZi_splashWillDismissScreen",
-            "printedName": "beiZi_splashWillDismissScreen(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "BeiZiSplash",
-                "printedName": "BeiZiSDK.BeiZiSplash",
-                "usr": "c:objc(cs)BeiZiSplash"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@ADXiluSDK@objc(cs)ADXiluSplashAd(im)BeiZi_splashWillDismissScreen:",
-            "mangledName": "$s9ADXiluSDK0A8SplashAdC29beiZi_splashWillDismissScreenyySo03BeifC0CF",
-            "moduleName": "ADXiluSDK",
-            "objc_name": "BeiZi_splashWillDismissScreen:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "beiZi_splashZoomOutDidClick",
-            "printedName": "beiZi_splashZoomOutDidClick(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "BeiZiSplash",
-                "printedName": "BeiZiSDK.BeiZiSplash",
-                "usr": "c:objc(cs)BeiZiSplash"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@ADXiluSDK@objc(cs)ADXiluSplashAd(im)BeiZi_splashZoomOutDidClick:",
-            "mangledName": "$s9ADXiluSDK0A8SplashAdC27beiZi_splashZoomOutDidClickyySo03BeifC0CF",
-            "moduleName": "ADXiluSDK",
-            "objc_name": "BeiZi_splashZoomOutDidClick:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "beiZi_splashZoomOutDidClose",
-            "printedName": "beiZi_splashZoomOutDidClose(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "BeiZiSplash",
-                "printedName": "BeiZiSDK.BeiZiSplash",
-                "usr": "c:objc(cs)BeiZiSplash"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@ADXiluSDK@objc(cs)ADXiluSplashAd(im)BeiZi_splashZoomOutDidClose:",
-            "mangledName": "$s9ADXiluSDK0A8SplashAdC27beiZi_splashZoomOutDidCloseyySo03BeifC0CF",
-            "moduleName": "ADXiluSDK",
-            "objc_name": "BeiZi_splashZoomOutDidClose:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "beiZi_splash",
-            "printedName": "beiZi_splash(_:didFailToLoadAdWithError:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "BeiZiSplash",
-                "printedName": "BeiZiSDK.BeiZiSplash",
-                "usr": "c:objc(cs)BeiZiSplash"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "BeiZiRequestError",
-                "printedName": "BeiZiSDK.BeiZiRequestError",
-                "usr": "c:objc(cs)BeiZiRequestError"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@ADXiluSDK@objc(cs)ADXiluSplashAd(im)BeiZi_splash:didFailToLoadAdWithError:",
-            "mangledName": "$s9ADXiluSDK0A8SplashAdC12beiZi_splash_013didFailToLoadD9WithErrorySo03BeifC0C_So0nf7RequestM0CtF",
-            "moduleName": "ADXiluSDK",
-            "objc_name": "BeiZi_splash:didFailToLoadAdWithError:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -27635,6 +27635,62 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@ADXiluSDK@@objc(cs)BeiZiSplash(py)description",
+            "mangledName": "$sSo11BeiZiSplashC9ADXiluSDKE11descriptionSSvp",
+            "moduleName": "ADXiluSDK",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "description",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@ADXiluSDK@@objc(cs)BeiZiSplash(im)description",
+                "mangledName": "$sSo11BeiZiSplashC9ADXiluSDKE11descriptionSSvg",
+                "moduleName": "ADXiluSDK",
+                "overriding": true,
+                "isOpen": true,
+                "objc_name": "description",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Class",
@@ -31831,28 +31887,28 @@
     {
       "filePath": "\/Users\/zyn\/XiluSdk-ios\/ADXiluSDK\/Classes\/Core\/ADXiluBaseAd.swift",
       "kind": "StringLiteral",
-      "offset": 2917,
+      "offset": 2988,
       "length": 9,
       "value": "\"bidding\""
     },
     {
       "filePath": "\/Users\/zyn\/XiluSdk-ios\/ADXiluSDK\/Classes\/Core\/ADXiluBaseAd.swift",
       "kind": "Array",
-      "offset": 3337,
+      "offset": 3408,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/zyn\/XiluSdk-ios\/ADXiluSDK\/Classes\/Core\/ADXiluBaseAd.swift",
       "kind": "IntegerLiteral",
-      "offset": 3369,
+      "offset": 3440,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/zyn\/XiluSdk-ios\/ADXiluSDK\/Classes\/Core\/ADXiluBaseAd.swift",
       "kind": "StringLiteral",
-      "offset": 3757,
+      "offset": 3900,
       "length": 9,
       "value": "\"bidding\""
     },
@@ -31866,49 +31922,49 @@
     {
       "filePath": "\/Users\/zyn\/XiluSdk-ios\/ADXiluSDK\/Classes\/Core\/ADXiluBaseAd.swift",
       "kind": "Array",
-      "offset": 4360,
+      "offset": 4503,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/zyn\/XiluSdk-ios\/ADXiluSDK\/Classes\/Core\/ADXiluBaseAd.swift",
       "kind": "FloatLiteral",
-      "offset": 4897,
+      "offset": 5040,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/zyn\/XiluSdk-ios\/ADXiluSDK\/Classes\/Core\/ADXiluBaseAd.swift",
       "kind": "StringLiteral",
-      "offset": 7036,
+      "offset": 6861,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/zyn\/XiluSdk-ios\/ADXiluSDK\/Classes\/Core\/ADXiluBaseAd.swift",
       "kind": "StringLiteral",
-      "offset": 10018,
+      "offset": 10011,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/zyn\/XiluSdk-ios\/ADXiluSDK\/Classes\/Core\/ADXiluBaseAd.swift",
       "kind": "StringLiteral",
-      "offset": 10043,
+      "offset": 10036,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/zyn\/XiluSdk-ios\/ADXiluSDK\/Classes\/Core\/ADXiluBaseAd.swift",
       "kind": "StringLiteral",
-      "offset": 10870,
+      "offset": 10863,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/zyn\/XiluSdk-ios\/ADXiluSDK\/Classes\/Core\/ADXiluBaseAd.swift",
       "kind": "StringLiteral",
-      "offset": 10895,
+      "offset": 10888,
       "length": 2,
       "value": "\"\""
     },
@@ -32426,98 +32482,91 @@
     {
       "filePath": "\/Users\/zyn\/XiluSdk-ios\/ADXiluSDK\/Classes\/Ads\/ADXiluSplashAd.swift",
       "kind": "Dictionary",
-      "offset": 2278,
+      "offset": 1972,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/zyn\/XiluSdk-ios\/ADXiluSDK\/Classes\/Ads\/ADXiluSplashAd.swift",
+      "kind": "Dictionary",
+      "offset": 2023,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/zyn\/XiluSdk-ios\/ADXiluSDK\/Classes\/Ads\/ADXiluSplashAd.swift",
+      "kind": "Dictionary",
+      "offset": 2383,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/zyn\/XiluSdk-ios\/ADXiluSDK\/Classes\/Ads\/ADXiluSplashAd.swift",
       "kind": "BooleanLiteral",
-      "offset": 2448,
+      "offset": 2553,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/zyn\/XiluSdk-ios\/ADXiluSDK\/Classes\/Ads\/ADXiluSplashAd.swift",
       "kind": "StringLiteral",
-      "offset": 2618,
+      "offset": 2723,
       "length": 22,
       "value": "\"com.xilu.atomic.bool\""
     },
     {
       "filePath": "\/Users\/zyn\/XiluSdk-ios\/ADXiluSDK\/Classes\/Ads\/ADXiluSplashAd.swift",
       "kind": "StringLiteral",
-      "offset": 4138,
-      "length": 8,
-      "value": "\"splash\""
+      "offset": 31290,
+      "length": 52,
+      "value": "\"BeiZiSplash { spaceID: \""
     },
     {
       "filePath": "\/Users\/zyn\/XiluSdk-ios\/ADXiluSDK\/Classes\/Ads\/ADXiluSplashAd.swift",
       "kind": "StringLiteral",
-      "offset": 4248,
-      "length": 8,
-      "value": "\"splash\""
-    },
-    {
-      "filePath": "\/Users\/zyn\/XiluSdk-ios\/ADXiluSDK\/Classes\/Ads\/ADXiluSplashAd.swift",
-      "kind": "StringLiteral",
-      "offset": 4275,
-      "length": 4,
-      "value": "\"bz\""
-    },
-    {
-      "filePath": "\/Users\/zyn\/XiluSdk-ios\/ADXiluSDK\/Classes\/Ads\/ADXiluSplashAd.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4462,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/zyn\/XiluSdk-ios\/ADXiluSDK\/Classes\/Ads\/ADXiluSplashAd.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4467,
-      "length": 4,
-      "value": "1000"
-    },
-    {
-      "filePath": "\/Users\/zyn\/XiluSdk-ios\/ADXiluSDK\/Classes\/Ads\/ADXiluSplashAd.swift",
-      "kind": "StringLiteral",
-      "offset": 4569,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/zyn\/XiluSdk-ios\/ADXiluSDK\/Classes\/Ads\/ADXiluSplashAd.swift",
-      "kind": "StringLiteral",
-      "offset": 28790,
-      "length": 45,
-      "value": "\"MSSplashAd { pid: \""
-    },
-    {
-      "filePath": "\/Users\/zyn\/XiluSdk-ios\/ADXiluSDK\/Classes\/Ads\/ADXiluSplashAd.swift",
-      "kind": "StringLiteral",
-      "offset": 28815,
+      "offset": 31324,
       "length": 1,
       "value": "\", ecpm: \""
     },
     {
       "filePath": "\/Users\/zyn\/XiluSdk-ios\/ADXiluSDK\/Classes\/Ads\/ADXiluSplashAd.swift",
       "kind": "StringLiteral",
-      "offset": 28832,
+      "offset": 31339,
       "length": 1,
       "value": "\" }\""
     },
     {
       "filePath": "\/Users\/zyn\/XiluSdk-ios\/ADXiluSDK\/Classes\/Ads\/ADXiluSplashAd.swift",
       "kind": "StringLiteral",
-      "offset": 29276,
+      "offset": 31750,
+      "length": 45,
+      "value": "\"MSSplashAd { pid: \""
+    },
+    {
+      "filePath": "\/Users\/zyn\/XiluSdk-ios\/ADXiluSDK\/Classes\/Ads\/ADXiluSplashAd.swift",
+      "kind": "StringLiteral",
+      "offset": 31775,
+      "length": 1,
+      "value": "\", ecpm: \""
+    },
+    {
+      "filePath": "\/Users\/zyn\/XiluSdk-ios\/ADXiluSDK\/Classes\/Ads\/ADXiluSplashAd.swift",
+      "kind": "StringLiteral",
+      "offset": 31792,
+      "length": 1,
+      "value": "\" }\""
+    },
+    {
+      "filePath": "\/Users\/zyn\/XiluSdk-ios\/ADXiluSDK\/Classes\/Ads\/ADXiluSplashAd.swift",
+      "kind": "StringLiteral",
+      "offset": 32236,
       "length": 32,
       "value": "\"GDTSplashAd {ecpm: \""
     },
     {
       "filePath": "\/Users\/zyn\/XiluSdk-ios\/ADXiluSDK\/Classes\/Ads\/ADXiluSplashAd.swift",
       "kind": "StringLiteral",
-      "offset": 29305,
+      "offset": 32265,
       "length": 1,
       "value": "\" }\""
     },

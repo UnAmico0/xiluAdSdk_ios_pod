@@ -820,6 +820,18 @@ public protocol ADXiluLoadProtocol {
   @objc public func p_release()
   @objc deinit
 }
+extension ADXiluSDK.ADXiluSplashAd : BeiZiSDK.BeiZiSplashDelegate {
+  @objc dynamic public func beiZi_splashBottomView() -> UIKit.UIView
+  @objc dynamic public func beiZi_splashDidClick(_ beiziSplash: BeiZiSDK.BeiZiSplash)
+  @objc dynamic public func beiZi_splashAdLifeTime(_ lifeTime: Swift.Int32)
+  @objc dynamic public func beiZi_splashDidLoadSuccess(_ beiziSplash: BeiZiSDK.BeiZiSplash)
+  @objc dynamic public func beiZi_splashDidPresentScreen(_ beiziSplash: BeiZiSDK.BeiZiSplash)
+  @objc dynamic public func beiZi_splashDidDismissScreen(_ beiziSplash: BeiZiSDK.BeiZiSplash)
+  @objc dynamic public func beiZi_splashWillDismissScreen(_ beiziSplash: BeiZiSDK.BeiZiSplash)
+  @objc dynamic public func beiZi_splashZoomOutDidClick(_ beiziSplash: BeiZiSDK.BeiZiSplash)
+  @objc dynamic public func beiZi_splashZoomOutDidClose(_ beiziSplash: BeiZiSDK.BeiZiSplash)
+  @objc dynamic public func beiZi_splash(_ beiziSplash: BeiZiSDK.BeiZiSplash, didFailToLoadAdWithError error: BeiZiSDK.BeiZiRequestError)
+}
 extension ADXiluSDK.ADXiluSplashAd : MSAdSDK.MSSplashAdDelegate {
   #if compiler(>=5.3) && $NonescapableTypes
   public func msSplashAdFail(_ splashAd: MSAdSDK.MSSplashAd!, extInfo info: [Swift.AnyHashable : Any]!, error: (any Swift.Error)!)
@@ -867,18 +879,6 @@ extension ADXiluSDK.ADXiluSplashAd : MSAdSDK.MSSplashAdDelegate {
   public func msSplashLoadedSuccess(_ splashAd: MSAdSDK.MSSplashAd!)
   #endif
 }
-extension ADXiluSDK.ADXiluSplashAd : BeiZiSDK.BeiZiSplashDelegate {
-  @objc dynamic public func beiZi_splashBottomView() -> UIKit.UIView
-  @objc dynamic public func beiZi_splashDidClick(_ beiziSplash: BeiZiSDK.BeiZiSplash)
-  @objc dynamic public func beiZi_splashAdLifeTime(_ lifeTime: Swift.Int32)
-  @objc dynamic public func beiZi_splashDidLoadSuccess(_ beiziSplash: BeiZiSDK.BeiZiSplash)
-  @objc dynamic public func beiZi_splashDidPresentScreen(_ beiziSplash: BeiZiSDK.BeiZiSplash)
-  @objc dynamic public func beiZi_splashDidDismissScreen(_ beiziSplash: BeiZiSDK.BeiZiSplash)
-  @objc dynamic public func beiZi_splashWillDismissScreen(_ beiziSplash: BeiZiSDK.BeiZiSplash)
-  @objc dynamic public func beiZi_splashZoomOutDidClick(_ beiziSplash: BeiZiSDK.BeiZiSplash)
-  @objc dynamic public func beiZi_splashZoomOutDidClose(_ beiziSplash: BeiZiSDK.BeiZiSplash)
-  @objc dynamic public func beiZi_splash(_ beiziSplash: BeiZiSDK.BeiZiSplash, didFailToLoadAdWithError error: BeiZiSDK.BeiZiRequestError)
-}
 extension ADXiluSDK.ADXiluSplashAd : GDTMobSDK.GDTSplashAdDelegate {
   #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func splashAdSuccessPresentScreen(_ splashAd: GDTMobSDK.GDTSplashAd!)
@@ -918,6 +918,9 @@ extension BeiZiSDK.BeiZiSplash : ADXiluSDK.ADXiluLoadProtocol {
   #if compiler(>=5.3) && $NonescapableTypes
   public func xilu_showAd(view: Any? = nil)
   #endif
+  @objc override dynamic open var description: Swift.String {
+    @objc get
+  }
 }
 extension MSAdSDK.MSSplashAd : ADXiluSDK.ADXiluLoadProtocol {
   #if compiler(>=5.3) && $NonescapableTypes
