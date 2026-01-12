@@ -399,7 +399,6 @@ extension RewardVodAdViewController: ADXiluRewardVodAdDelegate {
     self.loadButton.enabled = NO;
     
     [self.splashAd loadAd];
-    self.showButton.hidden = YES;
 }
 // 实现代理方法
 - (void)xilu_AdDidReceive:(ADXiluBaseAd *)xiluAd adInfo:(ADXiluAdInfo *)adInfo {
