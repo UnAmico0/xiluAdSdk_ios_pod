@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
     'SWIFT_VERSION' => '5.0'
   }
 #s.dependency  'ObjectMapper'
-  s.dependency  'CryptoSwift'
+  #s.dependency  'CryptoSwift'
   #s.dependency   'SnapKit'
   s.dependency   'GDTMobSDK', '4.15.65'
   s.dependency  'BeiZiSDK-iOS', '4.90.7.0'

@@ -24863,16 +24863,6 @@
       },
       {
         "kind": "Import",
-        "name": "CryptoSwift",
-        "printedName": "CryptoSwift",
-        "declKind": "Import",
-        "moduleName": "ADXiluSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -32496,42 +32486,42 @@
     {
       "filePath": "\/Users\/rohoninfosh\/XiluSdk-ios\/ADXiluSDK\/Classes\/Extensions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
-      "offset": 214,
+      "offset": 216,
       "length": 9,
       "value": "\"pdp_ip0\""
     },
     {
       "filePath": "\/Users\/rohoninfosh\/XiluSdk-ios\/ADXiluSDK\/Classes\/Extensions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
-      "offset": 280,
+      "offset": 282,
       "length": 5,
       "value": "\"en0\""
     },
     {
       "filePath": "\/Users\/rohoninfosh\/XiluSdk-ios\/ADXiluSDK\/Classes\/Extensions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
-      "offset": 327,
+      "offset": 329,
       "length": 7,
       "value": "\"utun0\""
     },
     {
       "filePath": "\/Users\/rohoninfosh\/XiluSdk-ios\/ADXiluSDK\/Classes\/Extensions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
-      "offset": 380,
+      "offset": 382,
       "length": 6,
       "value": "\"ipv4\""
     },
     {
       "filePath": "\/Users\/rohoninfosh\/XiluSdk-ios\/ADXiluSDK\/Classes\/Extensions\/UIDevice+Extension.swift",
       "kind": "StringLiteral",
-      "offset": 425,
+      "offset": 427,
       "length": 6,
       "value": "\"ipv6\""
     },
     {
       "filePath": "\/Users\/rohoninfosh\/XiluSdk-ios\/ADXiluSDK\/Classes\/Extensions\/UIDevice+Extension.swift",
       "kind": "Dictionary",
-      "offset": 10030,
+      "offset": 10024,
       "length": 7365,
       "value": "[(\"i386\", \"Simulator\"), (\"x86_64\", \"Simulator\"), (\"arm64\", \"Simulator\"), (\"iPhone1,1\", \"iPhone 2G\"), (\"iPhone1,2\", \"iPhone 3G\"), (\"iPhone2,1\", \"iPhone 3GS\"), (\"iPhone3,1\", \"iPhone 4\"), (\"iPhone3,2\", \"iPhone 4\"), (\"iPhone3,3\", \"iPhone 4\"), (\"iPhone4,1\", \"iPhone 4S\"), (\"iPhone5,1\", \"iPhone 5\"), (\"iPhone5,2\", \"iPhone 5\"), (\"iPhone5,3\", \"iPhone 5c\"), (\"iPhone5,4\", \"iPhone 5c\"), (\"iPhone6,1\", \"iPhone 5s\"), (\"iPhone6,2\", \"iPhone 5s\"), (\"iPhone7,1\", \"iPhone 6 Plus\"), (\"iPhone7,2\", \"iPhone 6\"), (\"iPhone8,1\", \"iPhone 6s\"), (\"iPhone8,2\", \"iPhone 6s Plus\"), (\"iPhone8,3\", \"iPhone SE\"), (\"iPhone8,4\", \"iPhone SE\"), (\"iPhone9,1\", \"iPhone 7\"), (\"iPhone9,3\", \"iPhone 7\"), (\"iPhone9,2\", \"iPhone 7 Plus\"), (\"iPhone9,4\", \"iPhone 7 Plus\"), (\"iPhone10,1\", \"iPhone 8\"), (\"iPhone10,4\", \"iPhone 8\"), (\"iPhone10,2\", \"iPhone 8 Plus\"), (\"iPhone10,5\", \"iPhone 8 Plus\"), (\"iPhone10,3\", \"iPhone X\"), (\"iPhone10,6\", \"iPhone X\"), (\"iPhone11,2\", \"iPhone XS\"), (\"iPhone11,4\", \"iPhone XS Max\"), (\"iPhone11,6\", \"iPhone XS Max\"), (\"iPhone11,8\", \"iPhone XR\"), (\"iPhone12,1\", \"iPhone 11\"), (\"iPhone12,3\", \"iPhone 11 Pro\"), (\"iPhone12,5\", \"iPhone 11 Pro Max\"), (\"iPhone12,8\", \"iPhone SE 2\"), (\"iPhone13,1\", \"iPhone 12 mini\"), (\"iPhone13,2\", \"iPhone 12\"), (\"iPhone13,3\", \"iPhone 12 Pro\"), (\"iPhone13,4\", \"iPhone 12 Pro Max\"), (\"iPhone14,4\", \"iPhone 13 mini\"), (\"iPhone14,5\", \"iPhone 13\"), (\"iPhone14,6\", \"iPhone SE 3\"), (\"iPhone14,2\", \"iPhone 13 Pro\"), (\"iPhone14,3\", \"iPhone 13 Pro Max\"), (\"iPhone14,7\", \"iPhone 14\"), (\"iPhone14,8\", \"iPhone 14 Plus\"), (\"iPhone15,2\", \"iPhone 14 Pro\"), (\"iPhone15,3\", \"iPhone 14 Pro Max\"), (\"iPhone15,4\", \"iPhone 15\"), (\"iPhone15,5\", \"iPhone 15 Plus\"), (\"iPhone16,1\", \"iPhone 15 Pro\"), (\"iPhone16,2\", \"iPhone 15 Pro Max\"), (\"iPhone17,1\", \"iPhone 16 Pro\"), (\"iPhone17,2\", \"iPhone 16 Pro Max\"), (\"iPhone17,3\", \"iPhone 16\"), (\"iPhone17,4\", \"iPhone 16 Plus\"), (\"iPhone17,5\", \"iPhone 16e\"), (\"iPhone18,1\", \"iPhone 17 Pro\"), (\"iPhone18,2\", \"iPhone 17 Pro Max\"), (\"iPhone18,3\", \"iPhone 17\"), (\"iPhone18,4\", \"iPhone Air\"), (\"iPod1,1\", \"iPod Touch 1\"), (\"iPod2,1\", \"iPod Touch 2\"), (\"iPod3,1\", \"iPod Touch 3\"), (\"iPod4,1\", \"iPod Touch 4\"), (\"iPod5,1\", \"iPod Touch 5\"), (\"iPod7,1\", \"iPod Touch 6\"), (\"iPod9,1\", \"iPod Touch 7\"), (\"iPad1,1\", \"iPad 1\"), (\"iPad1,2\", \"iPad 1\"), (\"iPad2,1\", \"iPad 2\"), (\"iPad2,2\", \"iPad 2\"), (\"iPad2,3\", \"iPad 2\"), (\"iPad2,4\", \"iPad 2\"), (\"iPad2,5\", \"iPad Mini\"), (\"iPad2,6\", \"iPad Mini\"), (\"iPad2,7\", \"iPad Mini\"), (\"iPad3,1\", \"iPad 3\"), (\"iPad3,2\", \"iPad 3\"), (\"iPad3,3\", \"iPad 3\"), (\"iPad3,4\", \"iPad 4\"), (\"iPad3,5\", \"iPad 4\"), (\"iPad3,6\", \"iPad 4\"), (\"iPad4,1\", \"iPad Air\"), (\"iPad4,2\", \"iPad Air\"), (\"iPad4,3\", \"iPad Air\"), (\"iPad4,4\", \"iPad Mini 2\"), (\"iPad4,5\", \"iPad Mini 2\"), (\"iPad4,6\", \"iPad Mini 2\"), (\"iPad4,7\", \"iPad Mini 3\"), (\"iPad4,8\", \"iPad Mini 3\"), (\"iPad4,9\", \"iPad Mini 3\"), (\"iPad5,1\", \"iPad Mini 4\"), (\"iPad5,2\", \"iPad Mini 4\"), (\"iPad5,3\", \"iPad Air 2\"), (\"iPad5,4\", \"iPad Air 2\"), (\"iPad6,3\", \"iPad Pro 9.7-inch\"), (\"iPad6,4\", \"iPad Pro 9.7-inch\"), (\"iPad6,7\", \"iPad Pro 12.9-inch\"), (\"iPad6,8\", \"iPad Pro 12.9-inch\"), (\"iPad6,11\", \"iPad 5\"), (\"iPad6,12\", \"iPad 5\"), (\"iPad7,1\", \"iPad Pro 2 12.9-inch\"), (\"iPad7,2\", \"iPad Pro 2 12.9-inch\"), (\"iPad7,3\", \"iPad Pro 2 10.5-inch\"), (\"iPad7,4\", \"iPad Pro 2 10.5-inch\"), (\"iPad7,5\", \"iPad 6\"), (\"iPad7,6\", \"iPad 6\"), (\"iPad7,11\", \"iPad 7\"), (\"iPad7,12\", \"iPad 7\"), (\"iPad8,1\", \"iPad Pro 11-inch\"), (\"iPad8,2\", \"iPad Pro 11-inch\"), (\"iPad8,3\", \"iPad Pro 11-inch\"), (\"iPad8,4\", \"iPad Pro 11-inch\"), (\"iPad8,5\", \"iPad Pro 3 12.9-inch\"), (\"iPad8,6\", \"iPad Pro 3 12.9-inch\"), (\"iPad8,7\", \"iPad Pro 3 12.9-inch\"), (\"iPad8,8\", \"iPad Pro 3 12.9-inch\"), (\"iPad8,9\", \"iPad Pro 2 11-inch\"), (\"iPad8,10\", \"iPad Pro 2 11-inch\"), (\"iPad8,11\", \"iPad Pro 4 12.9-inch\"), (\"iPad8,12\", \"iPad Pro 4 12.9-inch\"), (\"iPad11,1\", \"iPad mini 5\"), (\"iPad11,2\", \"iPad mini 5\"), (\"iPad11,3\", \"iPad Air 3\"), (\"iPad11,4\", \"iPad Air 3\"), (\"iPad11,6\", \"iPad 8\"), (\"iPad11,7\", \"iPad 8\"), (\"iPad13,1\", \"iPad Air 4\"), (\"iPad13,2\", \"iPad Air 4\"), (\"iPad13,4\", \"iPad Pro 3 11-inch\"), (\"iPad13,5\", \"iPad Pro 3 11-inch\"), (\"iPad13,6\", \"iPad Pro 3 11-inch\"), (\"iPad13,7\", \"iPad Pro 3 11-inch\"), (\"iPad13,8\", \"iPad Pro 5 12.9-inch\"), (\"iPad13,9\", \"iPad Pro 5 12.9-inch\"), (\"iPad13,10\", \"iPad Pro 5 12.9-inch\"), (\"iPad13,11\", \"iPad Pro 5 12.9-inch\"), (\"iPad14,1\", \"iPad mini 6\"), (\"iPad14,2\", \"iPad mini 6\"), (\"Watch1,1\", \"Apple Watch 38mm\"), (\"Watch1,2\", \"Apple Watch 38mm\"), (\"Watch2,6\", \"Apple Watch Series 1 38mm\"), (\"Watch2,7\", \"Apple Watch Series 1 42mm\"), (\"Watch2,3\", \"Apple Watch Series 2 38mm\"), (\"Watch2,4\", \"Apple Watch Series 2 42mm\"), (\"Watch3,1\", \"Apple Watch Series 3 38mm\"), (\"Watch3,2\", \"Apple Watch Series 3 42mm\"), (\"Watch3,3\", \"Apple Watch Series 3 38mm\"), (\"Watch3,4\", \"Apple Watch Series 3 42mm\"), (\"Watch4,1\", \"Apple Watch Series 4 40mm\"), (\"Watch4,2\", \"Apple Watch Series 4 44mm\"), (\"Watch4,3\", \"Apple Watch Series 4 40mm\"), (\"Watch4,4\", \"Apple Watch Series 4 44mm\"), (\"Watch5,1\", \"Apple Watch Series 5 40mm\"), (\"Watch5,2\", \"Apple Watch Series 5 44mm\"), (\"Watch5,3\", \"Apple Watch Series 5 40mm\"), (\"Watch5,4\", \"Apple Watch Series 5 44mm\"), (\"Watch5,9\", \"Apple Watch SE 40mm\"), (\"Watch5,10\", \"Apple Watch SE 44mm\"), (\"Watch5,11\", \"Apple Watch SE 40mm\"), (\"Watch5,12\", \"Apple Watch SE 44mm\"), (\"Watch6,1\", \"Apple Watch Series 6 40mm\"), (\"Watch6,2\", \"Apple Watch Series 6 44mm\"), (\"Watch6,3\", \"Apple Watch Series 6 40mm\"), (\"Watch6,4\", \"Apple Watch Series 6 44mm\"), (\"Watch6,6\", \"Apple Watch Series 7 41mm\"), (\"Watch6,7\", \"Apple Watch Series 7 45mm\"), (\"Watch6,8\", \"Apple Watch Series 7 41mm\"), (\"Watch6,9\", \"Apple Watch Series 7 45mm\"), (\"Watch6,18\", \"Apple Watch Ultra 49mm\"), (\"AppleTV1,1\", \"Apple TV 1\"), (\"AppleTV2,1\", \"Apple TV 2\"), (\"AppleTV3,1\", \"Apple TV 3\"), (\"AppleTV3,2\", \"Apple TV 3\"), (\"AppleTV5,3\", \"Apple TV 4\"), (\"AppleTV6,2\", \"Apple TV 4K\"), (\"AppleTV11,1\", \"Apple TV 4K 2\"), (\"AirPods1,1\", \"AirPods 1\"), (\"AirPods1,2\", \"AirPods 2\"), (\"AirPods1,3\", \"AirPods 2\"), (\"AirPodsPro1,1\", \"AirPods Pro 1\"), (\"AirPodsPro1,2\", \"AirPods Pro 2\"), (\"AirPodsMax1,1\", \"AirPods Max\"), (\"AudioAccessory1,1\", \"HomePod\"), (\"AudioAccessory1,2\", \"HomePod\"), (\"AudioAccessory5,1\", \"HomePod mini\"), (\"AirTag1,1\", \"AirTag\")]"
     },

@@ -9,7 +9,6 @@ import BeiZiSDK
 import SystemConfiguration.CaptiveNetwork
 import CoreLocation
 import CoreTelephony
-import CryptoSwift
 import Foundation
 import GDTMobSDK
 import MSAdSDK
