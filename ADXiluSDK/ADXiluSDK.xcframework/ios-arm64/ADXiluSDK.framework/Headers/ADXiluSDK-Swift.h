@@ -285,7 +285,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreLocation;
 @import Foundation;
 @import GDTMobSDK;
-@import MSAdSDK;
 @import ObjectiveC;
 #endif
 
@@ -412,6 +411,15 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) ADXiluAdSize
 /// Banner广告类
 SWIFT_CLASS("_TtC9ADXiluSDK14ADXiluBannerAd")
 @interface ADXiluBannerAd : ADXiluBaseAd
+- (void)msBannerAdReadySuccess:(id _Null_unspecified)msBannerAd;
+- (void)msBannerAdRenderSuccess:(id _Null_unspecified)msBannerAd;
+- (void)msBannerError:(id _Null_unspecified)msBannerAd error:(NSError * _Null_unspecified)error;
+- (void)msBannerAdRenderFail:(id _Null_unspecified)msBannerAd error:(NSError * _Null_unspecified)error;
+- (void)msBannerShow:(id _Null_unspecified)msBannerAd;
+- (void)msBannerClicked:(id _Null_unspecified)msBannerAd;
+- (void)msBannerDetailShow:(id _Null_unspecified)msBannerAd;
+- (void)msBannerDetailClosed:(id _Null_unspecified)msBannerAd;
+- (void)msBannerClosed:(id _Null_unspecified)msBannerAd;
 /// 广告容器视图
 @property (nonatomic, weak) UIView * _Nullable containerView;
 @property (nonatomic, strong) UIViewController * _Nullable nativeViewController;
@@ -422,24 +430,6 @@ SWIFT_CLASS("_TtC9ADXiluSDK14ADXiluBannerAd")
 /// 加载广告
 - (void)loadAd;
 - (void)dismissAd;
-@end
-
-
-@interface ADXiluBannerAd (SWIFT_EXTENSION(ADXiluSDK)) <BeiZiBannerViewDelegate>
-@end
-
-@class MSBannerView;
-
-@interface ADXiluBannerAd (SWIFT_EXTENSION(ADXiluSDK)) <MSBannerViewDelegate>
-- (void)msBannerAdReadySuccess:(MSBannerView * _Null_unspecified)msBannerAd;
-- (void)msBannerAdRenderSuccess:(MSBannerView * _Null_unspecified)msBannerAd;
-- (void)msBannerError:(MSBannerView * _Null_unspecified)msBannerAd error:(NSError * _Null_unspecified)error;
-- (void)msBannerAdRenderFail:(MSBannerView * _Null_unspecified)msBannerAd error:(NSError * _Null_unspecified)error;
-- (void)msBannerShow:(MSBannerView * _Null_unspecified)msBannerAd;
-- (void)msBannerClicked:(MSBannerView * _Null_unspecified)msBannerAd;
-- (void)msBannerDetailShow:(MSBannerView * _Null_unspecified)msBannerAd;
-- (void)msBannerDetailClosed:(MSBannerView * _Null_unspecified)msBannerAd;
-- (void)msBannerClosed:(MSBannerView * _Null_unspecified)msBannerAd;
 @end
 
 
@@ -493,6 +483,20 @@ SWIFT_CLASS("_TtC9ADXiluSDK11ADXiluError")
 /// 插屏广告类
 SWIFT_CLASS("_TtC9ADXiluSDK20ADXiluInterstitialAd")
 @interface ADXiluInterstitialAd : ADXiluBaseAd
+- (void)msInterstitialLoaded:(id _Null_unspecified)msInterstitialAd;
+- (void)msInterstitialShow:(id _Null_unspecified)msInterstitialAd;
+- (void)msInterstitialError:(id _Null_unspecified)msInterstitialAd error:(NSError * _Null_unspecified)error;
+- (void)msInterstitialAdShowFail:(id _Null_unspecified)msInterstitialAd error:(NSError * _Null_unspecified)error;
+- (void)msInterstitialAdReadySuccess:(id _Null_unspecified)msInterstitialAd;
+- (void)msInterstitialPlatformError:(id _Null_unspecified)platform ad:(id _Null_unspecified)msInterstitialAd error:(NSError * _Null_unspecified)error;
+- (void)msInterstitialClosed:(id _Null_unspecified)msInterstitialAd;
+- (void)msInterstitialClicked:(id _Null_unspecified)msInterstitialAd;
+- (void)msInterstitialExposure:(id _Null_unspecified)msInterstitialAd;
+- (void)msInterstitialDetailClosed:(id _Null_unspecified)msInterstitialAd;
+- (void)msInterstitialLoadedSuccess:(id _Null_unspecified)msInterstitialAd;
+- (void)msInterstitialLoadedFail:(id _Null_unspecified)msInterstitialAd error:(NSError * _Null_unspecified)error;
+- (void)msInterstitialAdRenderSuccess:(id _Null_unspecified)msInterstitialAd extInfo:(NSDictionary * _Null_unspecified)info;
+- (void)msInterstitialAdFail:(id _Null_unspecified)msInterstitialAd extInfo:(NSDictionary * _Null_unspecified)info error:(NSError * _Null_unspecified)error;
 - (nonnull instancetype)initWithAdPosId:(NSString * _Nonnull)adPosId adSize:(ADXiluAdSize * _Nonnull)adSize rootVC:(UIViewController * _Nullable)rootVC OBJC_DESIGNATED_INITIALIZER;
 /// 加载广告
 - (void)loadAd;
@@ -516,28 +520,22 @@ SWIFT_CLASS("_TtC9ADXiluSDK20ADXiluInterstitialAd")
 - (void)BeiZi_interstitial:(BeiZiInterstitial * _Nonnull)beiziInterstitial didFailToLoadAdWithError:(BeiZiRequestError * _Nonnull)error;
 @end
 
-@class MSInterstitialAd;
 
-@interface ADXiluInterstitialAd (SWIFT_EXTENSION(ADXiluSDK)) <MSInterstitialExtensionFunctionDelegate>
-- (void)msInterstitialLoaded:(MSInterstitialAd * _Null_unspecified)msInterstitialAd;
-- (void)msInterstitialShow:(MSInterstitialAd * _Null_unspecified)msInterstitialAd;
-- (void)msInterstitialError:(MSInterstitialAd * _Null_unspecified)msInterstitialAd error:(NSError * _Null_unspecified)error;
-- (void)msInterstitialAdShowFail:(MSInterstitialAd * _Null_unspecified)msInterstitialAd error:(NSError * _Null_unspecified)error;
-- (void)msInterstitialAdReadySuccess:(MSInterstitialAd * _Null_unspecified)msInterstitialAd;
-- (void)msInterstitialPlatformError:(MSPlatform)platform ad:(MSInterstitialAd * _Null_unspecified)msInterstitialAd error:(NSError * _Null_unspecified)error;
-@end
-
-
-@interface ADXiluInterstitialAd (SWIFT_EXTENSION(ADXiluSDK)) <MSInterstitialDelegate>
-- (void)msInterstitialClosed:(MSInterstitialAd * _Null_unspecified)msInterstitialAd;
-- (void)msInterstitialClicked:(MSInterstitialAd * _Null_unspecified)msInterstitialAd;
-- (void)msInterstitialDetailClosed:(MSInterstitialAd * _Null_unspecified)msInterstitialAd;
-@end
-
-
-/// 信息流广告类
+/// 原生广告类
 SWIFT_CLASS("_TtC9ADXiluSDK14ADXiluNativeAd")
 @interface ADXiluNativeAd : ADXiluBaseAd
+- (void)msNativeFeedAdPlatformError:(id _Nonnull)platform nativeFeedAd:(id _Nonnull)nativeFeedAd error:(NSError * _Nonnull)error;
+- (void)msNativeFeedAdShow:(id _Nonnull)feedAd;
+- (void)msNativeFeedAdClick:(id _Nonnull)feedAd;
+- (void)msNativeFeedAdClosed:(id _Nonnull)feedAd;
+- (void)msNativeFeedAdDetailShow;
+- (void)msNativeFeedAdDetailClosed;
+- (void)msNativeFeedAdLoaded:(id _Nonnull)nativeFeedAd feedAds:(NSArray * _Nonnull)feedAds;
+- (void)msNativeFeedAdError:(id _Nonnull)nativeFeedAd withError:(NSError * _Nonnull)error;
+- (void)msNativeFeedAdShowFailed:(id _Nonnull)feedAd error:(NSError * _Nonnull)error;
+- (void)msNativeFeedAdVideoStateDidChanged:(id _Nonnull)playerState feedAd:(id _Nonnull)feedAd;
+- (void)msNativeFeedAdMaterialMetaReadySuccess:(id _Nonnull)nativeFeedAd feedAd:(id _Nonnull)feedAd;
+- (void)msNativeFeedAdMaterialMetaReadyError:(id _Nonnull)nativeFeedAd feedAd:(id _Nonnull)feedAd error:(NSError * _Nonnull)error;
 @property (nonatomic) BOOL isTemplate;
 @property (nonatomic, strong) UIView * _Nullable containerView;
 @property (nonatomic, strong) UIViewController * _Nullable nativeViewController;
@@ -549,12 +547,6 @@ SWIFT_CLASS("_TtC9ADXiluSDK14ADXiluNativeAd")
 /// 释放资源
 - (void)p_release;
 - (nonnull instancetype)initWithAdPosId:(NSString * _Nonnull)adPosId adSize:(ADXiluAdSize * _Nonnull)adSize SWIFT_UNAVAILABLE;
-@end
-
-@class MSNativeFeedAd;
-
-@interface ADXiluNativeAd (SWIFT_EXTENSION(ADXiluSDK)) <MSNativeFeedAdExtensionFunctionDelegate>
-- (void)msNativeFeedAdPlatformError:(MSPlatform)platform nativeFeedAd:(MSNativeFeedAd * _Nonnull)nativeFeedAd error:(NSError * _Nonnull)error;
 @end
 
 @class BeiZiNativeExpress;
@@ -576,22 +568,6 @@ SWIFT_CLASS("_TtC9ADXiluSDK14ADXiluNativeAd")
 - (void)BeiZi_unifiedDidPresentScreen:(BeiZiUnifiedCustom * _Nonnull)unifiedCustom;
 - (void)BeiZi_unifiedDidCloseDetailView:(BeiZiUnifiedCustom * _Nonnull)unifiedCustom;
 - (void)BeiZi_unified:(BeiZiUnifiedCustom * _Nonnull)unifiedCustom didFailToLoadAdWithError:(BeiZiRequestError * _Nonnull)error;
-@end
-
-@class MSNativeFeedAdModel;
-
-@interface ADXiluNativeAd (SWIFT_EXTENSION(ADXiluSDK)) <MSNativeFeedAdDelegate>
-- (void)msNativeFeedAdShow:(MSNativeFeedAdModel * _Nonnull)feedAd;
-- (void)msNativeFeedAdClick:(MSNativeFeedAdModel * _Nonnull)feedAd;
-- (void)msNativeFeedAdClosed:(MSNativeFeedAdModel * _Nonnull)feedAd;
-- (void)msNativeFeedAdDetailShow;
-- (void)msNativeFeedAdDetailClosed;
-- (void)msNativeFeedAdLoaded:(MSNativeFeedAd * _Nonnull)nativeFeedAd feedAds:(NSArray<MSNativeFeedAdModel *> * _Nonnull)feedAds;
-- (void)msNativeFeedAdError:(MSNativeFeedAd * _Nonnull)nativeFeedAd withError:(NSError * _Nonnull)error;
-- (void)msNativeFeedAdShowFailed:(MSNativeFeedAdModel * _Nonnull)feedAd error:(NSError * _Nonnull)error;
-- (void)msNativeFeedAdVideoStateDidChanged:(MSPlayerPlayState)playerState feedAd:(MSNativeFeedAdModel * _Nonnull)feedAd;
-- (void)msNativeFeedAdMaterialMetaReadySuccess:(MSNativeFeedAd * _Nonnull)nativeFeedAd feedAd:(MSNativeFeedAdModel * _Nonnull)feedAd;
-- (void)msNativeFeedAdMaterialMetaReadyError:(MSNativeFeedAd * _Nonnull)nativeFeedAd feedAd:(MSNativeFeedAdModel * _Nonnull)feedAd error:(NSError * _Nonnull)error;
 @end
 
 enum ADXiluNativeAdType : NSInteger;
@@ -656,6 +632,22 @@ SWIFT_CLASS("_TtC9ADXiluSDK17ADXiluRewardVodAd")
 @class BeiZiRewardedVideo;
 
 @interface ADXiluRewardVodAd (SWIFT_EXTENSION(ADXiluSDK)) <BeiZiRewardedVideoDelegate>
+- (void)msRewardVideoLoaded:(id _Null_unspecified)msRewardVideoAd;
+- (void)msRewardVideoError:(id _Null_unspecified)msRewardVideoAd error:(NSError * _Null_unspecified)error;
+- (void)msRewardVideoRenderFail:(id _Null_unspecified)msRewardVideoAd error:(NSError * _Null_unspecified)error;
+- (void)msRewardVideoClickSkip:(id _Null_unspecified)msRewardVideoAd currentTime:(NSTimeInterval)currentTime;
+- (void)msRewardVideoReward:(id _Null_unspecified)msRewardVideoAd extInfo:(NSDictionary * _Null_unspecified)adInfo;
+- (void)msRewardVideoResumePlaying:(id _Null_unspecified)msRewardVideoAd;
+- (void)msRewardVideoRenderSuccess:(id _Null_unspecified)msRewardVideoAd;
+- (void)msRewardVideoStartPlaying:(id _Null_unspecified)msRewardVideoAd;
+- (void)msRewardVideoStopPlaying:(id _Null_unspecified)msRewardVideoAd;
+- (void)msRewardVideoWillShow:(id _Null_unspecified)msRewardVideoAd;
+- (void)msRewardVideoClicked:(id _Null_unspecified)msRewardVideoAd;
+- (void)msRewardVideoClosed:(id _Null_unspecified)msRewardVideoAd;
+- (void)msRewardVideoFinish:(id _Null_unspecified)msRewardVideoAd;
+- (void)msRewardVideoCached:(id _Null_unspecified)msRewardVideoAd;
+- (void)msRewardVideoShow:(id _Null_unspecified)msRewardVideoAd;
+- (void)msRewardVideoPlayingError:(id _Null_unspecified)msRewardVideoAd error:(NSError * _Null_unspecified)error;
 - (void)BeiZi_rewardedVideo:(BeiZiRewardedVideo * _Nonnull)beiziRewardedVideo didFailToLoadAdWithError:(BeiZiRequestError * _Nonnull)error;
 - (void)BeiZi_rewardedVideoDidReceiveAd:(BeiZiRewardedVideo * _Nonnull)beiziRewardedVideo;
 - (void)BeiZi_rewardedVideoDidDismissScreen:(BeiZiRewardedVideo * _Nonnull)beiziRewardedVideo;
@@ -663,27 +655,6 @@ SWIFT_CLASS("_TtC9ADXiluSDK17ADXiluRewardVodAd")
 - (void)BeiZi_rewardedVideoDidPlayEnd:(BeiZiRewardedVideo * _Nonnull)beiziRewardedVideo;
 - (void)BeiZi_rewardedVideoDidStartPlay:(BeiZiRewardedVideo * _Nonnull)beiziRewardedVideo;
 - (void)BeiZi_rewardedVideo:(BeiZiRewardedVideo * _Nonnull)beiziRewardedVideo didRewardUserWithReward:(NSObject * _Nonnull)reward;
-@end
-
-@class MSRewardVideoAd;
-
-@interface ADXiluRewardVodAd (SWIFT_EXTENSION(ADXiluSDK)) <MSRewardVideoAdDelegate>
-- (void)msRewardVideoLoaded:(MSRewardVideoAd * _Null_unspecified)msRewardVideoAd;
-- (void)msRewardVideoError:(MSRewardVideoAd * _Null_unspecified)msRewardVideoAd error:(NSError * _Null_unspecified)error;
-- (void)msRewardVideoRenderFail:(MSRewardVideoAd * _Null_unspecified)msRewardVideoAd error:(NSError * _Null_unspecified)error;
-- (void)msRewardVideoClickSkip:(MSRewardVideoAd * _Null_unspecified)msRewardVideoAd currentTime:(NSTimeInterval)currentTime;
-- (void)msRewardVideoReward:(MSRewardVideoAd * _Null_unspecified)msRewardVideoAd extInfo:(NSDictionary * _Null_unspecified)adInfo;
-- (void)msRewardVideoResumePlaying:(MSRewardVideoAd * _Null_unspecified)msRewardVideoAd;
-- (void)msRewardVideoRenderSuccess:(MSRewardVideoAd * _Null_unspecified)msRewardVideoAd;
-- (void)msRewardVideoStartPlaying:(MSRewardVideoAd * _Null_unspecified)msRewardVideoAd;
-- (void)msRewardVideoStopPlaying:(MSRewardVideoAd * _Null_unspecified)msRewardVideoAd;
-- (void)msRewardVideoWillShow:(MSRewardVideoAd * _Null_unspecified)msRewardVideoAd;
-- (void)msRewardVideoClicked:(MSRewardVideoAd * _Null_unspecified)msRewardVideoAd;
-- (void)msRewardVideoClosed:(MSRewardVideoAd * _Null_unspecified)msRewardVideoAd;
-- (void)msRewardVideoFinish:(MSRewardVideoAd * _Null_unspecified)msRewardVideoAd;
-- (void)msRewardVideoCached:(MSRewardVideoAd * _Null_unspecified)msRewardVideoAd;
-- (void)msRewardVideoShow:(MSRewardVideoAd * _Null_unspecified)msRewardVideoAd;
-- (void)msRewardVideoPlayingError:(MSRewardVideoAd * _Null_unspecified)msRewardVideoAd error:(NSError * _Null_unspecified)error;
 @end
 
 
@@ -750,6 +721,21 @@ enum ADXiluSplashAdStyle : NSInteger;
 /// 开屏广告类
 SWIFT_CLASS("_TtC9ADXiluSDK14ADXiluSplashAd")
 @interface ADXiluSplashAd : ADXiluBaseAd
+- (void)msSplashAdFail:(id _Null_unspecified)splashAd extInfo:(NSDictionary * _Null_unspecified)info error:(NSError * _Null_unspecified)error;
+- (void)msSplashLoadedFail:(id _Null_unspecified)splashAd withError:(NSError * _Null_unspecified)error;
+- (void)msSplashPresent:(id _Null_unspecified)splashAd;
+- (void)msSplashSkip:(id _Null_unspecified)splashAd;
+- (void)msSplashClosed:(id _Null_unspecified)splashAd;
+- (void)msSplashClicked:(id _Null_unspecified)splashAd;
+- (void)msSplashExposure:(id _Null_unspecified)splashAd;
+- (void)msSplashShow:(id _Null_unspecified)splashAd;
+- (void)msSplashDetailClosed:(id _Null_unspecified)splashAd;
+- (void)msSplashAdReadySuccess:(id _Null_unspecified)splashAd;
+- (void)msSplashError:(id _Null_unspecified)splashAd withError:(NSError * _Null_unspecified)error;
+- (void)msSplashAdShowFail:(id _Null_unspecified)splashAd error:(NSError * _Null_unspecified)error;
+- (void)msSplashAdLifeTime:(NSInteger)time splashAd:(id _Null_unspecified)splashAd;
+- (void)msSplashWillClosed:(id _Null_unspecified)splashAd;
+- (void)msSplashLoadedSuccess:(id _Null_unspecified)splashAd;
 /// 广告样式
 @property (nonatomic, readonly) enum ADXiluSplashAdStyle style;
 @property (nonatomic, strong) UIView * _Nullable bottomView;
@@ -796,22 +782,6 @@ SWIFT_CLASS("_TtC9ADXiluSDK14ADXiluSplashAd")
 - (void)splashAdDidDismissFullScreenModal:(GDTSplashAd * _Null_unspecified)splashAd;
 @end
 
-@class MSSplashAd;
-
-@interface ADXiluSplashAd (SWIFT_EXTENSION(ADXiluSDK)) <MSSplashAdDelegate>
-- (void)msSplashPresent:(MSSplashAd * _Null_unspecified)splashAd;
-- (void)msSplashSkip:(MSSplashAd * _Null_unspecified)splashAd;
-- (void)msSplashClosed:(MSSplashAd * _Null_unspecified)splashAd;
-- (void)msSplashClicked:(MSSplashAd * _Null_unspecified)splashAd;
-- (void)msSplashShow:(MSSplashAd * _Null_unspecified)splashAd;
-- (void)msSplashDetailClosed:(MSSplashAd * _Null_unspecified)splashAd;
-- (void)msSplashAdReadySuccess:(MSSplashAd * _Null_unspecified)splashAd;
-- (void)msSplashError:(MSSplashAd * _Null_unspecified)splashAd withError:(NSError * _Null_unspecified)error;
-- (void)msSplashAdShowFail:(MSSplashAd * _Null_unspecified)splashAd error:(NSError * _Null_unspecified)error;
-- (void)msSplashAdLifeTime:(NSInteger)time splashAd:(MSSplashAd * _Null_unspecified)splashAd;
-- (void)msSplashWillClosed:(MSSplashAd * _Null_unspecified)splashAd;
-@end
-
 
 /// 开屏广告监听器
 SWIFT_PROTOCOL("_TtP9ADXiluSDK22ADXiluSplashAdDelegate_")
@@ -841,35 +811,29 @@ typedef SWIFT_ENUM(NSInteger, ADXiluSplashAdStyle, open) {
 };
 
 
+@interface BeiZiInterstitial (SWIFT_EXTENSION(ADXiluSDK))
+- (void)xilu_showAdWithView:(id _Nullable)view;
+@end
+
+
+@interface BeiZiRewardedVideo (SWIFT_EXTENSION(ADXiluSDK))
+- (void)xilu_showAdWithView:(id _Nullable)view;
+@end
 
 
 @interface BeiZiSplash (SWIFT_EXTENSION(ADXiluSDK))
+- (void)xilu_showAdWithView:(id _Nullable)view;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
+
+@interface BeiZiUnifiedCustom (SWIFT_EXTENSION(ADXiluSDK))
+- (void)xilu_showAdWithView:(id _Nullable)view;
+@end
 
 
 @interface GDTSplashAd (SWIFT_EXTENSION(ADXiluSDK))
-@property (nonatomic, readonly, copy) NSString * _Nonnull description;
-@end
-
-
-@interface MSInterstitialAd (SWIFT_EXTENSION(ADXiluSDK))
-@property (nonatomic, readonly, copy) NSString * _Nonnull description;
-@end
-
-
-@interface MSNativeFeedAd (SWIFT_EXTENSION(ADXiluSDK))
-@property (nonatomic, readonly, copy) NSString * _Nonnull description;
-@end
-
-
-@interface MSRewardVideoAd (SWIFT_EXTENSION(ADXiluSDK))
-@property (nonatomic, readonly, copy) NSString * _Nonnull description;
-@end
-
-
-@interface MSSplashAd (SWIFT_EXTENSION(ADXiluSDK))
+- (void)xilu_showAdWithView:(id _Nullable)view;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
@@ -879,6 +843,11 @@ typedef SWIFT_ENUM(NSInteger, ADXiluSplashAdStyle, open) {
 @end
 
 
+
+
+@interface NSObject (SWIFT_EXTENSION(ADXiluSDK))
+- (void)xilu_showAdWithView:(id _Nullable)view;
+@end
 
 
 
