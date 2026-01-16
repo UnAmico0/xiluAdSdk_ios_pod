@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.frameworks = "UIKit", "Foundation", "AVFoundation", "CoreLocation", "SystemConfiguration", "AdSupport", "CoreTelephony"
  
   s.swift_version = "5.0"
-  s.vendored_frameworks = "ADXiluSDK/*.framework"
+  s.vendored_frameworks = "ADXiluSDK/*.xcframework"
   # Swift 库必须开启模块化
   s.pod_target_xcconfig = {
     'DEFINES_MODULE' => 'YES', # 核心：生成模块，否则其他项目无法导入
