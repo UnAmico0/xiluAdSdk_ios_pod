@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
     'DEFINES_MODULE' => 'YES', # 核心：生成模块，否则其他项目无法导入
     'SWIFT_VERSION' => '5.0'
   }
-
+  s.dependency  'SnapKit'
   s.dependency  'CryptoSwift'
   s.dependency   'GDTMobSDK', '4.15.65'
   s.dependency  'BeiZiSDK-iOS', '4.90.7.0'
