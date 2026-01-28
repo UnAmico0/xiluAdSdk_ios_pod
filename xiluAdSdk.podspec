@@ -23,12 +23,19 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '12.2'
   s.frameworks = "UIKit", "Foundation", "AVFoundation", "CoreLocation", "SystemConfiguration", "AdSupport", "CoreTelephony"
  
-  s.swift_version = "5.0"
+  s.swift_versions = ['5.0', '5.1', '5.2', '5.3', '5.4', '5.5', '5.6', '5.7', '5.8', '5.9', '5.10']
   s.vendored_frameworks = "ADXiluSDK/*.xcframework"
-  # Swift 库必须开启模块化
+ 
   s.pod_target_xcconfig = {
     'DEFINES_MODULE' => 'YES', # 核心：生成模块，否则其他项目无法导入
-    'SWIFT_VERSION' => '5.0'
+    'SWIFT_VERSION' => '5.0',
+    'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES',
+    'SKIP_INSTALL' => 'NO'
+  }
+  # 针对不同Xcode版本的兼容性处理
+  s.user_target_xcconfig = {
+    'FRAMEWORK_SEARCH_PATHS' => '$(inherited)',
+    'OTHER_SWIFT_FLAGS' => '$(inherited)'
   }
   s.dependency  'SnapKit'
   s.dependency  'CryptoSwift'
