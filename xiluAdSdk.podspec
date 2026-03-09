@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'xiluAdSdk'
-  s.version          = '1.0.8'
+  s.version          = '1.0.9'
   s.summary          = 'ADXilu iOS SDK - 广告聚合SDK'
 
   s.description      = <<-DESC
@@ -39,8 +39,10 @@ Pod::Spec.new do |s|
   }
   s.dependency  'SnapKit'
   s.dependency  'CryptoSwift'
-  s.dependency   'GDTMobSDK', '4.15.65'
-  s.dependency  'BeiZiSDK-iOS', '4.90.7.0'
-  s.dependency  'MSMobAdSDK/MS', '2.7.7.3'
+  s.dependency 'Ads-CN/CSJMediation', '7.4.0.4'
+  s.dependency   'GDTMobSDK', "4.15.65"
+  s.dependency  'BeiZiSDK-iOS', "4.90.7.0"
+  s.dependency  'MSMobAdSDK/MS', "2.7.7.3"
+
   s.exclude_files = "ADXiluSDK/Classes/Tool/*.md" # 排除所有 md 文件
 end

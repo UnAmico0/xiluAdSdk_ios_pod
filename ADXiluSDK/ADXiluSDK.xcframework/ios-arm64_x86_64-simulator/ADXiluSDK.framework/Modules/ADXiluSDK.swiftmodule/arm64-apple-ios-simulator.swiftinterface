@@ -5,6 +5,7 @@
 @_exported import ADXiluSDK
 import AdSupport
 import AppTrackingTransparency
+import BUAdSDK
 import BeiZiSDK
 import SystemConfiguration.CaptiveNetwork
 import CoreLocation
@@ -21,11 +22,11 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 public protocol ADAdaptorProtocol {
-  func initialize()
+  func initialize(completion: @escaping (Swift.Bool, Swift.String?) -> Swift.Void)
   func getVersion() -> Swift.String
 }
 @objc @_inheritsConvenienceInitializers public class ADAdaptor : ObjectiveC.NSObject, ADXiluSDK.ADAdaptorProtocol {
-  public func initialize()
+  public func initialize(completion: @escaping (Swift.Bool, Swift.String?) -> Swift.Void)
   public func getVersion() -> Swift.String
   public static let shared: ADXiluSDK.ADAdaptor
   @objc override dynamic public init()
@@ -320,6 +321,25 @@ extension ADXiluSDK.ADAdsConfig {
   public func getNetworkConfig(for platform: Swift.String) -> ADXiluSDK.ADNetworkItem?
   public func getSDKConfig(for platform: Swift.String) -> ADXiluSDK.ADSDKConfigItem?
 }
+extension ADXiluSDK.ADXiluBannerAd : BUAdSDK.BUNativeExpressBannerViewDelegate {
+  @objc dynamic public func nativeExpressBannerAdViewDidLoad(_ bannerAdView: BUAdSDK.BUNativeExpressBannerView)
+  @objc dynamic public func nativeExpressBannerAdView(_ bannerAdView: BUAdSDK.BUNativeExpressBannerView, didLoadFailWithError error: (any Swift.Error)?)
+  @objc dynamic public func nativeExpressBannerAdViewRenderSuccess(_ bannerAdView: BUAdSDK.BUNativeExpressBannerView)
+  @objc dynamic public func nativeExpressBannerAdViewRenderFail(_ bannerAdView: BUAdSDK.BUNativeExpressBannerView, error: (any Swift.Error)?)
+  @objc dynamic public func nativeExpressBannerAdViewWillBecomVisible(_ bannerAdView: BUAdSDK.BUNativeExpressBannerView)
+  @objc dynamic public func nativeExpressBannerAdViewDidClick(_ bannerAdView: BUAdSDK.BUNativeExpressBannerView)
+  @objc dynamic public func nativeExpressBannerAdViewDidRemoved(_ bannerAdView: BUAdSDK.BUNativeExpressBannerView)
+  @objc dynamic public func nativeExpressBannerAdViewDidCloseOtherController(_ bannerAdView: BUAdSDK.BUNativeExpressBannerView, interactionType: BUAdSDK.BUInteractionType)
+}
+extension BUAdSDK.BUNativeExpressBannerView : ADXiluSDK.ADXiluLoadProtocol {
+  @_Concurrency.MainActor @preconcurrency public func xilu_showAd(view: Any? = nil)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open var description: Swift.String {
+    @objc get
+  }
+  @_Concurrency.MainActor @preconcurrency public var xilu_ecpm: Swift.String {
+    get
+  }
+}
 @_inheritsConvenienceInitializers @objc public class ADXiluBannerAd : ADXiluSDK.ADXiluBaseAd {
   @objc weak public var containerView: UIKit.UIView?
   @objc public var nativeViewController: UIKit.UIViewController?
@@ -336,7 +356,7 @@ extension ADXiluSDK.ADXiluBannerAd : GDTMobSDK.GDTUnifiedBannerViewDelegate {
   @objc dynamic public func unifiedBannerViewDidLoad(_ bannerView: GDTMobSDK.GDTUnifiedBannerView)
   @objc dynamic public func unifiedBannerViewFailed(toLoad bannerView: GDTMobSDK.GDTUnifiedBannerView, error: any Swift.Error)
   public func bannerViewWillLeaveApplication(_ bannerView: GDTMobSDK.GDTUnifiedBannerView!)
-  public func bannerViewWillClose(_ bannerView: GDTMobSDK.GDTUnifiedBannerView!)
+  @objc dynamic public func unifiedBannerViewWillClose(_ bannerView: GDTMobSDK.GDTUnifiedBannerView)
   public func bannerViewWillExposure(_ bannerView: GDTMobSDK.GDTUnifiedBannerView!)
   public func bannerViewClicked(_ bannerView: GDTMobSDK.GDTUnifiedBannerView!)
 }
@@ -345,6 +365,7 @@ extension ADXiluSDK.ADXiluBannerAd : GDTMobSDK.GDTUnifiedBannerViewDelegate {
   @objc optional func xilu_AdDidReceiveMuti(_ xiluAd: ADXiluSDK.ADXiluBaseAd, adInfos: [ADXiluSDK.ADXiluAdInfo])
   @objc optional func xilu_AdDidExpose(_ xiluAd: ADXiluSDK.ADXiluBaseAd, adInfo: ADXiluSDK.ADXiluAdInfo)
   @objc optional func xilu_AdDidClick(_ xiluAd: ADXiluSDK.ADXiluBaseAd, adInfo: ADXiluSDK.ADXiluAdInfo)
+  @objc optional func xilu_AdWillClose(_ xiluAd: ADXiluSDK.ADXiluBaseAd, adInfo: ADXiluSDK.ADXiluAdInfo)
   @objc optional func xilu_AdDidClose(_ xiluAd: ADXiluSDK.ADXiluBaseAd, adInfo: ADXiluSDK.ADXiluAdInfo)
   @objc optional func xilu_AdDidSkip(_ xiluAd: ADXiluSDK.ADXiluBaseAd, adInfo: ADXiluSDK.ADXiluAdInfo)
   @objc optional func xilu_AdDidFail(_ xiluAd: ADXiluSDK.ADXiluBaseAd, error: ADXiluSDK.ADXiluError)
@@ -373,6 +394,7 @@ extension ADXiluSDK.ADXiluBaseAd : ADXiluSDK.ADXiluBaseAdDelegate {
   @objc dynamic public func xilu_AdDidClick(_ xiluAd: ADXiluSDK.ADXiluBaseAd, adInfo: ADXiluSDK.ADXiluAdInfo)
   @objc dynamic public func xilu_AdDidReceive(_ xiluAd: ADXiluSDK.ADXiluBaseAd, adInfo: ADXiluSDK.ADXiluAdInfo)
   @objc dynamic public func xilu_AdDidExpose(_ xiluAd: ADXiluSDK.ADXiluBaseAd, adInfo: ADXiluSDK.ADXiluAdInfo)
+  @objc dynamic public func xilu_AdWillClose(_ xiluAd: ADXiluSDK.ADXiluBaseAd, adInfo: ADXiluSDK.ADXiluAdInfo)
   @objc dynamic public func xilu_AdDidClose(_ xiluAd: ADXiluSDK.ADXiluBaseAd, adInfo: ADXiluSDK.ADXiluAdInfo)
   @objc dynamic public func xilu_AdDidFail(_ xiluAd: ADXiluSDK.ADXiluBaseAd, error: ADXiluSDK.ADXiluError)
   @objc dynamic public func xilu_AdDidSkip(_ xiluAd: ADXiluSDK.ADXiluBaseAd, adInfo: ADXiluSDK.ADXiluAdInfo)
@@ -401,6 +423,22 @@ extension ADXiluSDK.ADXiluInterstitialAd : GDTMobSDK.GDTUnifiedInterstitialAdDel
   @objc dynamic public func unifiedInterstitialFail(toLoad unifiedInterstitialAd: GDTMobSDK.GDTUnifiedInterstitialAd, error: any Swift.Error)
   @objc dynamic public func unifiedInterstitialDidDismissScreen(_ unifiedInterstitial: GDTMobSDK.GDTUnifiedInterstitialAd)
   @objc dynamic public func unifiedInterstitialClicked(_ unifiedInterstitial: GDTMobSDK.GDTUnifiedInterstitialAd)
+}
+extension ADXiluSDK.ADXiluInterstitialAd : BUAdSDK.BUNativeExpressFullscreenVideoAdDelegate {
+  @objc dynamic public func nativeExpressFullscreenVideoAdDidLoad(_ fullscreenVideoAd: BUAdSDK.BUNativeExpressFullscreenVideoAd)
+  @objc dynamic public func nativeExpressFullscreenVideoAd(_ fullscreenVideoAd: BUAdSDK.BUNativeExpressFullscreenVideoAd, didFailWithError error: (any Swift.Error)?)
+  @objc dynamic public func nativeExpressFullscreenVideoAdViewRenderSuccess(_ fullscreenVideoAd: BUAdSDK.BUNativeExpressFullscreenVideoAd)
+  @objc dynamic public func nativeExpressFullscreenVideoAdViewRenderFail(_ fullscreenVideoAd: BUAdSDK.BUNativeExpressFullscreenVideoAd, error: (any Swift.Error)?)
+  @objc dynamic public func nativeExpressFullscreenVideoAdDidVisible(_ fullscreenVideoAd: BUAdSDK.BUNativeExpressFullscreenVideoAd)
+  @objc dynamic public func nativeExpressFullscreenVideoAdDidClick(_ fullscreenVideoAd: BUAdSDK.BUNativeExpressFullscreenVideoAd)
+  @objc dynamic public func nativeExpressFullscreenVideoAdDidClose(_ fullscreenVideoAd: BUAdSDK.BUNativeExpressFullscreenVideoAd)
+  @objc dynamic public func nativeExpressFullscreenVideoAdDidPlayFinish(_ fullscreenVideoAd: BUAdSDK.BUNativeExpressFullscreenVideoAd, didFailWithError error: (any Swift.Error)?)
+}
+extension BUAdSDK.BUNativeExpressFullscreenVideoAd : ADXiluSDK.ADXiluLoadProtocol {
+  public func xilu_showAd(view: Any? = nil)
+  @objc override dynamic open var description: Swift.String {
+    @objc get
+  }
 }
 @objc public enum ADXiluNativeAdType : Swift.Int {
   case express = 0
@@ -471,6 +509,20 @@ extension ADXiluSDK.ADXiluNativeAd : GDTMobSDK.GDTUnifiedNativeAdDelegate, GDTMo
   @objc dynamic public func gdt_unifiedNativeAdViewApplicationWillEnterBackground(_ unifiedNativeAdView: GDTMobSDK.GDTUnifiedNativeAdView)
   @objc dynamic public func gdt_unifiedNativeAdDetailViewWillPresentScreen(_ unifiedNativeAdView: GDTMobSDK.GDTUnifiedNativeAdView)
   @objc dynamic public func gdt_unifiedNativeAdLoaded(_ unifiedNativeAdDataObjects: [GDTMobSDK.GDTUnifiedNativeAdDataObject]?, error: (any Swift.Error)?)
+}
+extension ADXiluSDK.ADXiluRewardVodAd : BUAdSDK.BUNativeExpressRewardedVideoAdDelegate {
+  @objc dynamic public func nativeExpressRewardedVideoAdDidLoad(_ rewardedVideoAd: BUAdSDK.BUNativeExpressRewardedVideoAd)
+  @objc dynamic public func nativeExpressRewardedVideoAd(_ rewardedVideoAd: BUAdSDK.BUNativeExpressRewardedVideoAd, didFailWithError error: (any Swift.Error)?)
+  @objc dynamic public func nativeExpressRewardedVideoAdDidDownLoadVideo(_ rewardedVideoAd: BUAdSDK.BUNativeExpressRewardedVideoAd)
+  @objc dynamic public func nativeExpressRewardedVideoAdDidVisible(_ rewardedVideoAd: BUAdSDK.BUNativeExpressRewardedVideoAd)
+  @objc dynamic public func nativeExpressRewardedVideoAdDidClick(_ rewardedVideoAd: BUAdSDK.BUNativeExpressRewardedVideoAd)
+  @objc dynamic public func nativeExpressRewardedVideoAdDidClose(_ rewardedVideoAd: BUAdSDK.BUNativeExpressRewardedVideoAd)
+  @objc dynamic public func nativeExpressRewardedVideoAdDidPlayFinish(_ rewardedVideoAd: BUAdSDK.BUNativeExpressRewardedVideoAd, didFailWithError error: (any Swift.Error)?)
+  @objc dynamic public func nativeExpressRewardedVideoAdServerRewardDidSucceed(_ rewardedVideoAd: BUAdSDK.BUNativeExpressRewardedVideoAd, verify: Swift.Bool)
+  public func nativeExpressRewardedVideoAdServerRewardDidFail(_ rewardedVideoAd: BUAdSDK.BUNativeExpressRewardedVideoAd)
+}
+extension BUAdSDK.BUNativeExpressRewardedVideoAd : ADXiluSDK.ADXiluLoadProtocol {
+  public func xilu_showAd(view: Any?)
 }
 @objc public protocol ADXiluRewardVodAdDelegate : ADXiluSDK.ADXiluBaseAdDelegate {
   @objc func xilu_AdVideoDidCache(_ rewardVodAd: ADXiluSDK.ADXiluBaseAd, adInfo: ADXiluSDK.ADXiluAdInfo)
@@ -551,6 +603,7 @@ extension ADXiluSDK.ADXiluRewardVodAd : GDTMobSDK.GDTRewardedVideoAdDelegate {
   case beizi = 1
   case ms = 2
   case gdt = 3
+  case csj = 4
   public var name: Swift.String {
     get
   }
@@ -633,8 +686,8 @@ extension ADXiluSDK.ADXiluSplashAd : BeiZiSDK.BeiZiSplashDelegate {
   @objc dynamic public func beiZi_splashAdLifeTime(_ lifeTime: Swift.Int32)
   @objc dynamic public func beiZi_splashDidLoadSuccess(_ beiziSplash: BeiZiSDK.BeiZiSplash)
   @objc dynamic public func beiZi_splashDidPresentScreen(_ beiziSplash: BeiZiSDK.BeiZiSplash)
-  @objc dynamic public func beiZi_splashDidDismissScreen(_ beiziSplash: BeiZiSDK.BeiZiSplash)
   @objc dynamic public func beiZi_splashWillDismissScreen(_ beiziSplash: BeiZiSDK.BeiZiSplash)
+  @objc dynamic public func beiZi_splashDidDismissScreen(_ beiziSplash: BeiZiSDK.BeiZiSplash)
   @objc dynamic public func beiZi_splashZoomOutDidClick(_ beiziSplash: BeiZiSDK.BeiZiSplash)
   @objc dynamic public func beiZi_splashZoomOutDidClose(_ beiziSplash: BeiZiSDK.BeiZiSplash)
   @objc dynamic public func beiZi_splash(_ beiziSplash: BeiZiSDK.BeiZiSplash, didFailToLoadAdWithError error: BeiZiSDK.BeiZiRequestError)
@@ -663,6 +716,22 @@ extension GDTMobSDK.GDTSplashAd : ADXiluSDK.ADXiluLoadProtocol {
   @objc override dynamic open var description: Swift.String {
     @objc get
   }
+}
+extension ADXiluSDK.ADXiluSplashAd : BUAdSDK.BUSplashAdDelegate {
+  @objc dynamic public func splashAdLoadSuccess(_ splashAd: BUAdSDK.BUSplashAd)
+  @objc dynamic public func splashAdLoadFail(_ splashAd: BUAdSDK.BUSplashAd, error: BUAdSDK.BUAdError?)
+  @objc dynamic public func splashAdRenderSuccess(_ splashAd: BUAdSDK.BUSplashAd)
+  @objc dynamic public func splashAdRenderFail(_ splashAd: BUAdSDK.BUSplashAd, error: BUAdSDK.BUAdError?)
+  @objc dynamic public func splashAdWillShow(_ splashAd: BUAdSDK.BUSplashAd)
+  @objc dynamic public func splashAdDidShow(_ splashAd: BUAdSDK.BUSplashAd)
+  @objc dynamic public func splashAdDidClick(_ splashAd: BUAdSDK.BUSplashAd)
+  @objc dynamic public func splashAdDidClose(_ splashAd: BUAdSDK.BUSplashAd, closeType: BUAdSDK.BUSplashAdCloseType)
+  @objc dynamic public func splashAdViewControllerDidClose(_ splashAd: BUAdSDK.BUSplashAd)
+  @objc dynamic public func splashDidCloseOtherController(_ splashAd: BUAdSDK.BUSplashAd, interactionType: BUAdSDK.BUInteractionType)
+  @objc dynamic public func splashVideoAdDidPlayFinish(_ splashAd: BUAdSDK.BUSplashAd, didFailWithError error: (any Swift.Error)?)
+}
+extension BUAdSDK.BUSplashAd : ADXiluSDK.ADXiluLoadProtocol {
+  public func xilu_showAd(view: Any? = nil)
 }
 extension Foundation.NSError {
   public func fullInfo() -> Swift.String
