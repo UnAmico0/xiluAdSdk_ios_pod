@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/ADXiluSDK-Swift.h</key>
 		<data>
-		o+FFf7gnRAI7whx1nJM5CfI5zkg=
+		ktefG4S/Ui1Xvpgd774rQal8Js0=
 		</data>
 		<key>Headers/ADXiluSDK-umbrella.h</key>
 		<data>
@@ -22,19 +22,19 @@
 		</data>
 		<key>Modules/ADXiluSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		LuAxP1cvg/tMId/7lI3vxr5Rem0=
+		nk/rmwWnm+DggYN/URwRwwUGZEI=
 		</data>
 		<key>Modules/ADXiluSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		LjN0QTtkl/a3IsDcaQFnvg3MI+A=
+		fRPyUa9zPI49VowqCdj1aOjxTvc=
 		</data>
 		<key>Modules/ADXiluSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		6nzC5FPm7SNsmjcRNnX/i7XyOuU=
+		8hxvZ3imTdLkgCBWUG6gL9+36I0=
 		</data>
 		<key>Modules/ADXiluSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		GcAfP3HlvyY0zapq2LNhzftVhFc=
+		O7SBjs2NljInIhMytHNAEdjqCEQ=
 		</data>
 		<key>Modules/ADXiluSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -42,19 +42,19 @@
 		</data>
 		<key>Modules/ADXiluSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		GcAfP3HlvyY0zapq2LNhzftVhFc=
+		O7SBjs2NljInIhMytHNAEdjqCEQ=
 		</data>
 		<key>Modules/ADXiluSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		oknBO4282w/6pNxHF3mpJSLjEEg=
+		DhmohpU9Z28zsmMrd7rMQUV62Ik=
 		</data>
 		<key>Modules/ADXiluSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		6nzC5FPm7SNsmjcRNnX/i7XyOuU=
+		8hxvZ3imTdLkgCBWUG6gL9+36I0=
 		</data>
 		<key>Modules/ADXiluSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		f/eBCdVAjfyYTxVjNTn/YpXSuWw=
+		vgJc6+1wQCtcLpXSH6aPNke6gBE=
 		</data>
 		<key>Modules/ADXiluSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/ADXiluSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		f/eBCdVAjfyYTxVjNTn/YpXSuWw=
+		vgJc6+1wQCtcLpXSH6aPNke6gBE=
 		</data>
 		<key>Modules/ADXiluSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Q21vzMFnDEG7KtpUnUyY032P8Zc=
+		w2hJvtCSPoMw8qU4awQEkA9UHkQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -79,11 +79,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			o+FFf7gnRAI7whx1nJM5CfI5zkg=
+			ktefG4S/Ui1Xvpgd774rQal8Js0=
 			</data>
 			<key>hash2</key>
 			<data>
-			k1cIjo8JsROUALkILzRGhrzNJrrq7AjhOodBbJTV2k0=
+			LipVIKjTYZRyTSNcRAxPaOOxA+dscNRg4UWJv5mZQso=
 			</data>
 		</dict>
 		<key>Headers/ADXiluSDK-umbrella.h</key>
@@ -112,44 +112,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LuAxP1cvg/tMId/7lI3vxr5Rem0=
+			nk/rmwWnm+DggYN/URwRwwUGZEI=
 			</data>
 			<key>hash2</key>
 			<data>
-			s/E/gu2kxuwy0EaRUyYb1rT1IWMIsAVUWW32JF2RGDI=
+			0U3fgXk77q0VUBmS/5XiBI6W1XqVKIGahOVRIgq3ORs=
 			</data>
 		</dict>
 		<key>Modules/ADXiluSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LjN0QTtkl/a3IsDcaQFnvg3MI+A=
+			fRPyUa9zPI49VowqCdj1aOjxTvc=
 			</data>
 			<key>hash2</key>
 			<data>
-			OEJqcSI4LBdAcvyRL28zNb4wGw8hf3xjzm+DWvtqSqc=
+			fgmNWpcfJoQZTNK78UTMI2FrDjtBHvtWzdNsM8ESbyA=
 			</data>
 		</dict>
 		<key>Modules/ADXiluSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6nzC5FPm7SNsmjcRNnX/i7XyOuU=
+			8hxvZ3imTdLkgCBWUG6gL9+36I0=
 			</data>
 			<key>hash2</key>
 			<data>
-			90ySoXRsRfI665/Ad0f05STFh6rG3jOqXCaRrbEO78Q=
+			n4d2tBRDU1zmo/nHOQBJgq//z8CB7G1DUw9nfHExQZw=
 			</data>
 		</dict>
 		<key>Modules/ADXiluSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GcAfP3HlvyY0zapq2LNhzftVhFc=
+			O7SBjs2NljInIhMytHNAEdjqCEQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			p3vEm/vGQaScVnuHhs0nvfWdK+FD2s1kQp9KBzpUqfk=
+			5otEthHSA916ogMuTeTqdBINizIQMrYde71EdsfD508=
 			</data>
 		</dict>
 		<key>Modules/ADXiluSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -167,44 +167,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GcAfP3HlvyY0zapq2LNhzftVhFc=
+			O7SBjs2NljInIhMytHNAEdjqCEQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			p3vEm/vGQaScVnuHhs0nvfWdK+FD2s1kQp9KBzpUqfk=
+			5otEthHSA916ogMuTeTqdBINizIQMrYde71EdsfD508=
 			</data>
 		</dict>
 		<key>Modules/ADXiluSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oknBO4282w/6pNxHF3mpJSLjEEg=
+			DhmohpU9Z28zsmMrd7rMQUV62Ik=
 			</data>
 			<key>hash2</key>
 			<data>
-			WJLgay9cSaH8tKHwTxr6O5YhNK/RmG1QBEGCivCWfo4=
+			ymEFiPQfSa7SHa4zwgtOVQMngCLARsltb2xsy/C9umE=
 			</data>
 		</dict>
 		<key>Modules/ADXiluSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6nzC5FPm7SNsmjcRNnX/i7XyOuU=
+			8hxvZ3imTdLkgCBWUG6gL9+36I0=
 			</data>
 			<key>hash2</key>
 			<data>
-			90ySoXRsRfI665/Ad0f05STFh6rG3jOqXCaRrbEO78Q=
+			n4d2tBRDU1zmo/nHOQBJgq//z8CB7G1DUw9nfHExQZw=
 			</data>
 		</dict>
 		<key>Modules/ADXiluSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			f/eBCdVAjfyYTxVjNTn/YpXSuWw=
+			vgJc6+1wQCtcLpXSH6aPNke6gBE=
 			</data>
 			<key>hash2</key>
 			<data>
-			EnzZxetpJuD0R9wGZLScan6ZAVwkZZvpnslXqafNhog=
+			m3O0TAKlVwa1QmT4iZ1Fn89I/89cvcrk63U8OtI/4G4=
 			</data>
 		</dict>
 		<key>Modules/ADXiluSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -222,22 +222,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			f/eBCdVAjfyYTxVjNTn/YpXSuWw=
+			vgJc6+1wQCtcLpXSH6aPNke6gBE=
 			</data>
 			<key>hash2</key>
 			<data>
-			EnzZxetpJuD0R9wGZLScan6ZAVwkZZvpnslXqafNhog=
+			m3O0TAKlVwa1QmT4iZ1Fn89I/89cvcrk63U8OtI/4G4=
 			</data>
 		</dict>
 		<key>Modules/ADXiluSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Q21vzMFnDEG7KtpUnUyY032P8Zc=
+			w2hJvtCSPoMw8qU4awQEkA9UHkQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			Hlc4jx+U0lcmzA4ox88SSYZ3oEOB/AdHs/yhPZgcSys=
+			ZMq2OoO5oOjd3WmITqVyChq2sqQS++9dNh9+lcoB2lk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
