@@ -22,15 +22,15 @@
 		</data>
 		<key>Modules/ADXiluSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		nk/rmwWnm+DggYN/URwRwwUGZEI=
+		ZRHb1GMDT8j77ygUtFAhv9o9fnU=
 		</data>
 		<key>Modules/ADXiluSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		fRPyUa9zPI49VowqCdj1aOjxTvc=
+		1WNn3DQHEzErDAHPTJsLJpBBXeA=
 		</data>
 		<key>Modules/ADXiluSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		8hxvZ3imTdLkgCBWUG6gL9+36I0=
+		zZew6kHzH95oXMFKcOKaomDAjLo=
 		</data>
 		<key>Modules/ADXiluSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/ADXiluSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		8hxvZ3imTdLkgCBWUG6gL9+36I0=
+		zZew6kHzH95oXMFKcOKaomDAjLo=
 		</data>
 		<key>Modules/ADXiluSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -112,33 +112,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nk/rmwWnm+DggYN/URwRwwUGZEI=
+			ZRHb1GMDT8j77ygUtFAhv9o9fnU=
 			</data>
 			<key>hash2</key>
 			<data>
-			0U3fgXk77q0VUBmS/5XiBI6W1XqVKIGahOVRIgq3ORs=
+			Q5EFpLGeUCfFTxe4SQGHEFikD+p3fQo0MaPVhWhckTA=
 			</data>
 		</dict>
 		<key>Modules/ADXiluSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fRPyUa9zPI49VowqCdj1aOjxTvc=
+			1WNn3DQHEzErDAHPTJsLJpBBXeA=
 			</data>
 			<key>hash2</key>
 			<data>
-			fgmNWpcfJoQZTNK78UTMI2FrDjtBHvtWzdNsM8ESbyA=
+			dTgpZtzcYIFw5wlPITT2f3eY+eseBSf2ts5bHq4Sh3I=
 			</data>
 		</dict>
 		<key>Modules/ADXiluSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8hxvZ3imTdLkgCBWUG6gL9+36I0=
+			zZew6kHzH95oXMFKcOKaomDAjLo=
 			</data>
 			<key>hash2</key>
 			<data>
-			n4d2tBRDU1zmo/nHOQBJgq//z8CB7G1DUw9nfHExQZw=
+			lv5iqRB4yPv54jZgo9H/BaWmTKqZagIPwrJzRbhIWf4=
 			</data>
 		</dict>
 		<key>Modules/ADXiluSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -189,11 +189,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8hxvZ3imTdLkgCBWUG6gL9+36I0=
+			zZew6kHzH95oXMFKcOKaomDAjLo=
 			</data>
 			<key>hash2</key>
 			<data>
-			n4d2tBRDU1zmo/nHOQBJgq//z8CB7G1DUw9nfHExQZw=
+			lv5iqRB4yPv54jZgo9H/BaWmTKqZagIPwrJzRbhIWf4=
 			</data>
 		</dict>
 		<key>Modules/ADXiluSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
