@@ -37,6 +37,13 @@
       },
       {
         "kind": "Import",
+        "name": "BUAdSDK",
+        "printedName": "BUAdSDK",
+        "declKind": "Import",
+        "moduleName": "ADXiluSDK"
+      },
+      {
+        "kind": "Import",
         "name": "BaiduMobAdSDK",
         "printedName": "BaiduMobAdSDK",
         "declKind": "Import",
