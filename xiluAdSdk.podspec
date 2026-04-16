@@ -39,6 +39,8 @@ Pod::Spec.new do |s|
   }
   s.dependency  'SnapKit'
   s.dependency  'CryptoSwift'
+  s.dependency   'KSAdSDK'
+  s.dependency   'BaiduMobAdSDK', '10.050'
   s.dependency 'Ads-CN/CSJMediation', '7.4.0.4'
   s.dependency   'GDTMobSDK', "4.15.65"
   s.dependency  'BeiZiSDK-iOS', "4.90.7.0"
