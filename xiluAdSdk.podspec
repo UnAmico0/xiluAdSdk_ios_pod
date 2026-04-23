@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
     'OTHER_SWIFT_FLAGS' => '$(inherited)'
   }
   s.dependency  'SnapKit'
-  s.dependency  'CryptoSwift'
+  s.dependency  'CryptoSwift', '1.8.4'
   s.dependency   'KSAdSDK'
   s.dependency   'BaiduMobAdSDK', '10.050'
   s.dependency 'Ads-CN/CSJMediation', '7.4.0.4'
