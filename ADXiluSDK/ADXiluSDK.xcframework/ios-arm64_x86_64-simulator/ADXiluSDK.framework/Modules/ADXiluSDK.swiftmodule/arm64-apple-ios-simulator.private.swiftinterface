@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios12.2-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name ADXiluSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.3.2 effective-5.10 (swiftlang-6.3.2.1.108 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios12.2-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name ADXiluSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
 @_exported import ADXiluSDK
 import AdSupport
 import AppTrackingTransparency
@@ -23,6 +23,7 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+import os
 public protocol ADAdaptorProtocol {
   func initialize(completion: @escaping (Swift.Bool, Swift.String?) -> Swift.Void)
   func getVersion() -> Swift.String
@@ -43,7 +44,7 @@ public protocol ADAdaptorProtocol {
   @objc deinit
 }
 extension ADXiluSDK.ADDeviceInfoTool : CoreLocation.CLLocationManagerDelegate {
-  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [CoreLocation.CLLocation])
+  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [_LocationEssentials.CLLocation])
   @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didFailWithError error: any Swift.Error)
   @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didChangeAuthorization status: CoreLocation.CLAuthorizationStatus)
 }
@@ -425,7 +426,8 @@ public struct ADNetworkAdPosition : Swift.Codable {
   public var adTemplate: Swift.String?
   public let adSlotId: Swift.String
   public let appId: Swift.String
-  public init(platform: Swift.String, adType: Swift.String, ecpm: Swift.Int, ecpmType: Swift.String, skipShowTime: Swift.Int, screenDirect: Swift.Int, requestRate: Swift.Int, adTemplate: Swift.String?, adSlotId: Swift.String, appId: Swift.String)
+  public var priority: Swift.Int
+  public init(platform: Swift.String, adType: Swift.String, ecpm: Swift.Int, ecpmType: Swift.String, skipShowTime: Swift.Int, screenDirect: Swift.Int, requestRate: Swift.Int, adTemplate: Swift.String?, adSlotId: Swift.String, appId: Swift.String, priority: Swift.Int)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -771,6 +773,7 @@ extension ADXiluSDK.ADXiluRewardVodAd : GDTMobSDK.GDTRewardedVideoAdDelegate {
   @objc public var rewardAmount: Swift.Int
   @objc public var rewardName: Swift.String
   @objc public var extraData: [Swift.String : Any]
+  @objc public var priority: Swift.Int
   @objc public var platform: ADXiluSDK.ADXiluAdPlatform
   @objc public var isReady: Swift.Bool
   @objc public init(adId: Swift.String, platform: ADXiluSDK.ADXiluAdPlatform, isReady: Swift.Bool = true)
