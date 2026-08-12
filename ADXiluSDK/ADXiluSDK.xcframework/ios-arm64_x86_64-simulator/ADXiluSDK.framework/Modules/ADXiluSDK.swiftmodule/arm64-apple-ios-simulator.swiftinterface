@@ -873,12 +873,6 @@ extension BeiZiSDK.BeiZiSplash : ADXiluSDK.ADXiluLoadProtocol {
     @objc get
   }
 }
-extension MSAdSDK.MSSplashAd : ADXiluSDK.ADXiluLoadProtocol {
-  public func xilu_showAd(view: Any? = nil)
-  @objc override dynamic open var description: Swift.String {
-    @objc get
-  }
-}
 extension GDTMobSDK.GDTSplashAd : ADXiluSDK.ADXiluLoadProtocol {
   public func xilu_showAd(view: Any? = nil)
   @objc override dynamic open var description: Swift.String {

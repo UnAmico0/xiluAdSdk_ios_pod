@@ -353,7 +353,6 @@ extern "C" {
 @import Foundation;
 @import GDTMobSDK;
 @import KSAdSDK;
-@import MSAdSDK;
 @import ObjectiveC;
 #endif
 
@@ -939,10 +938,6 @@ typedef SWIFT_ENUM(NSInteger, ADXiluSplashAdStyle, open) {
 @end
 
 @interface GDTSplashAd (SWIFT_EXTENSION(ADXiluSDK))
-@property (nonatomic, readonly, copy) NSString * _Nonnull description;
-@end
-
-@interface MSSplashAd (SWIFT_EXTENSION(ADXiluSDK))
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
