@@ -1278,6 +1278,20 @@ extension UIKit.UIDevice {
   @objc override dynamic public init()
   @objc deinit
 }
+@_hasMissingDesignatedInitializers final public class XLSDKFileLogger {
+  public static let shared: ADXiluSDK.XLSDKFileLogger
+  final public var fileLoggerisEnabled: Swift.Bool
+  final public var maxFileSize: Swift.UInt64
+  final public var maxBackupCount: Swift.Int
+  final public func write(_ message: Swift.String)
+  final public func currentLogFileURL() -> Foundation.URL
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func readLog() -> Swift.String?
+  #endif
+  final public func clearLog()
+  final public func close()
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class XLSDKLogTool {
   public enum LogLevel : Swift.String, Swift.CaseIterable {
     case debug
